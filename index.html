@@ -10,23 +10,53 @@
     <link rel="stylesheet" href="css/main.css">
     <title>Open Weather Map API</title>
 </head>
+
 <body>
-    <img class="background" src="images/photo-1516912481808-3406841bd33c.webp">
-    <div>
-        <h1> Hello World </h1>
-    </div>
-    <form name="weather-form" id="weather-search-form">
-        <label for="city">Enter your city: </label>
-        <input type="text" name="city" id="city" required>
-
-        <button type="submit" id="submitButton" onclick="getData()">Search</button>
-    </form>
+    <div class="container">
+        <h1> FOR CHECKING WEATHER WHENEVER</h1>
+        <div class="row">
+            <div class="col-12 col-12-md">
+                <form name="weather-form" id="weather-search-form">
+                    <label for="city">Enter your city: </label>
+                    <input type="text" name="city" id="city" required>
+                    <button type="submit" id="submitButton" onclick="load_data()">Search</button>
+                </form>
+            </div>
+        </div>
+    
     <!--Tables-->
-    <div>
-        <section class="list-group temp_max" id="weather_report"></section>
-
+        <div class="row" id="weather_report">
+            <table id="data-table">
+                <tr>
+                    <h4> Name of City Searched For</h4>
+                </tr>
+                <tr>
+                    <th scope="col">High Temp</th>
+                </tr>
+                <tr id="weather_point">
+                    <td color="red" scope="row" id="high_temp"></td>
+                </tr>
+                <tr>
+                    <th scope="col" >Low Temp</th>
+                </tr>
+                <tr id="weather_point">
+                    <td color="blue" scope="row" id="low_temp"></td>
+                </tr>
+                <tr>
+                    <th scope="col">Humidity</th>
+                </tr>
+                <tr id="weather_point">
+                    <td color="orange" scope="row" id="humidity"></td>
+                </tr>
+                <tr>
+                    <th scope="col">Forecast</th>
+                </tr>
+                <tr id="weather_point">
+                    <td color="yellow" scope="row" id="forecast"></td>
+                </tr>
+            </table>
+        </div>
     </div>
-
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script src="js/main.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>

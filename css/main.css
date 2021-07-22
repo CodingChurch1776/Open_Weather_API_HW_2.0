@@ -1,4 +1,51 @@
-.background {
-    display: inline;
-    justify-self: center;
+body {
+    background-image: url('https://i1.wp.com/blog.jws.app/wp-content/uploads/2020/10/jonathan-bowers-BqKdvJ8a5TI-unsplash-scaled-1.jpg?ssl=1');
+    background-size: cover;
+}
+
+.weather_search_form {
+    text-align: center;
+    margin-top: auto;
+}
+
+div {
+    padding: 30px;
+}
+
+label, th, td {
+    color: antiquewhite;
+}
+
+th,
+td {
+  width: 150px;
+  text-align: center;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0 15px;
+  }
+
+h1, h4 {
+    color: antiquewhite;
+    text-align: center; 
+}
+
+#forecast {
+    color:rgb(8, 247, 8);
+}
+
+#humidity {
+    color:yellow;
+}
+
+#low_temp {
+    color:blue;
+}
+
+#high_temp {
+    color:red;
 }
